@@ -19,7 +19,7 @@ const cat = "meow";
 
 cat.boop();
 
-console.log(Object.getOwnPropertyNames.call(cat.__proto__)); // Object.getOwnPropertyNames.call() is not used to check if a property exists on an object. Instead, it's used to get all the property names of an object.
-console.log(Object.prototype.hasOwnProperty.call(cat, "boop")); //  false is likely due to a misunderstanding of how hasOwnProperty works. hasOwnProperty checks if the object has the specified property as its own property, not inherited ones.
+// console.log(Object.getOwnPropertyNames.call(cat.__proto__)); // Object.getOwnPropertyNames.call() is not used to check if a property exists on an object. Instead, it's used to get all the property names of an object.
+// console.log(Object.prototype.hasOwnProperty.call(cat, "boop")); //  false is likely due to a misunderstanding of how hasOwnProperty works. hasOwnProperty checks if the object has the specified property as its own property, not inherited ones.
 // console.log("boop" in cat); // The in operator can only be used to check if a property is in an object, not in a primitive type like a string.
 console.log(Object.prototype.hasOwnProperty.call(cat.__proto__, "boop")); // Outputs: true
