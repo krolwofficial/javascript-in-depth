@@ -10,3 +10,16 @@
 
     4. What is happening here and why does this work?
 */
+
+var fakeArray = { 0: "Zero", 1: "One", 2: "Two", length: 3 };
+
+console.log(fakeArray);
+
+// fakeArray.__proto__ = Array.prototype;
+
+Object.setPrototypeOf(fakeArray, Array.prototype);
+console.log(Object.getOwnPropertyNames(Array.prototype));
+
+console.log("//////////");
+
+console.log(fakeArray.map((el) => console.log(el)));

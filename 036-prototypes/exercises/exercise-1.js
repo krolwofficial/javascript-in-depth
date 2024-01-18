@@ -17,9 +17,9 @@
 
 console.log("start");
 
-console.log(Object.getOwnPropertyNames(Object));
-console.log(Object.getOwnPropertyNames(Array));
-console.log(Object.getOwnPropertyNames(Array.__proto__));
+console.log(Object.getOwnPropertyNames(Object.prototype));
+console.log(Object.getOwnPropertyNames(Array.prototype));
+console.log(Object.getOwnPropertyNames(Array.prototype.__proto__));
 
 // console.log(Object.getOwnPropertyNames(Object.getPrototypeOf(Array)));
 // console.log(Object.getOwnPropertyNames(Object.getPrototypeOf(Array.__proto__)));
@@ -30,8 +30,7 @@ console.log(Object.getOwnPropertyNames(Array.__proto__));
 // console.log(this);
 // console.log(Object.getOwnPropertyNames(Object.getPrototypeOf(this)));
 
-console.log("================");
-console.log(Object.getOwnPropertyNames(Array.__proto__));
-console.log(Array.__proto__.__proto__);
+// console.log("================");
+// console.log(Object.getOwnPropertyNames(Array.__proto__));
 
 // If Array's prototype is an Object why it has methods available for a function
