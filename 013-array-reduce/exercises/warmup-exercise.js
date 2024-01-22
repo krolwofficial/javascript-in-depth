@@ -5,3 +5,14 @@
     
     3. Print out both "points" and "sum"
 */
+
+const points = [55, 56, 57, 58, 59, 60];
+
+const sum = (arr) => {
+  arr.reduce((acc, item) => {
+    console.log(item);
+    console.log(acc);
+  });
+};
+
+sum(points);
