@@ -20,3 +20,22 @@
 
     8. Print out "myPet" to the terminal again
 */
+
+const myPet = {
+  name: "Sudo",
+  type: "Dog",
+  breed: "Poodle",
+  age: 7,
+  friends: ["Bit", "Byte", "Data"],
+};
+
+console.log(myPet);
+
+myPet.color = "Black";
+
+console.log(myPet.color);
+
+myPet.friends = myPet.friends.filter((el) => el !== "Data");
+myPet.friends.push("Chip");
+
+console.log(myPet.friends);
