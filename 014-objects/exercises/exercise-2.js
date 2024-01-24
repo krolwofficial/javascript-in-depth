@@ -25,3 +25,22 @@
 
     9. Print out both "store" and "candy"
 */
+
+const banana = { name: "banana", quantity: 1, price: 1.95 };
+const apple = { name: "apple", quantity: 1, price: 1.45 };
+const candy = { name: "candy", quantity: 1, price: 3.5 };
+
+const store = {
+  storeNumber: 5,
+  locationCity: "Milan",
+  locationCountry: "Italy",
+  products: [banana, apple, candy],
+};
+
+store.products = store.products.map((el) => {
+  if (el.name === "banana") return { ...el, price: 1.75 };
+  if (el.name === "candy") return { ...el, price: 4.99 };
+  else return el;
+});
+
+console.log(store.products);
