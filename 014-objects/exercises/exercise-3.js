@@ -30,3 +30,5 @@ const houseForSale = {
   owner: { name: "Blake", age: 29 },
   offers: [290000, 295000, 315000, 312000],
 };
+
+console.log(houseForSale);
