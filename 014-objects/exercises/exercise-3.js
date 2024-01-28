@@ -31,4 +31,27 @@ const houseForSale = {
   offers: [290000, 295000, 315000, 312000],
 };
 
+// console.log(houseForSale);
+
+delete houseForSale.built;
+
+// console.log(houseForSale);
+
+houseForSale.owner.age = 30;
+
+// console.log(houseForSale);
+
+const calcMaxOffer = (offers) => {
+  return offers.reduce((result, offer) => {
+    if (offer > result) {
+      return offer;
+    }
+    return result;
+  }, 0);
+};
+
+console.log(calcMaxOffer(houseForSale.offers));
+
+houseForSale.sales_price = 312000;
+
 console.log(houseForSale);
